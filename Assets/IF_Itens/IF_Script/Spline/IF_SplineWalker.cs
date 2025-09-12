@@ -4,13 +4,18 @@ using UnityEngine.Splines;
 public class IF_SplineWalker : MonoBehaviour
 {
     [Header("Configuração de movimento")]
-    public float speed = 5f;
+    public bool isDiferente = false;
+    public float velocidadeLocal = 5f;
+
+    [Header("Configuração do Manager")]
+    public string chaveVelocidade; // string escolhida no Inspector
+
+    private IF_VelocidadeManager manager;
     private float progress = 0f;
 
     [Header("Spline Animate")]
     private SplineAnimate splineAnimate;
 
-    // splineNodeAtual agora é obtido dinamicamente
     public IF_SplineNode SplineNodeAtual
     {
         get
@@ -27,18 +32,36 @@ public class IF_SplineWalker : MonoBehaviour
     private void Start()
     {
         splineAnimate = GetComponent<SplineAnimate>();
+
+        // procura o objeto com a tag "Velocidade Manager"
+        GameObject go = GameObject.FindGameObjectWithTag("Velocidade Manager");
+        if (go != null)
+        {
+            manager = go.GetComponent<IF_SetVelocidade>()?.manager;
+            if (manager == null)
+            {
+                Debug.LogWarning("O objeto com tag 'Velocidade Manager' não tem IF_SetVelocidade ou não está com manager configurado.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Nenhum objeto com a tag 'Velocidade Manager' foi encontrado na cena.");
+        }
     }
 
     void Update()
     {
-        var splineNodeAtual = SplineNodeAtual; // pega a spline atual do SplineAnimate
+        var splineNodeAtual = SplineNodeAtual;
         if (splineNodeAtual == null || splineNodeAtual.Spline == null) return;
 
         var spline = splineNodeAtual.Spline;
 
+        // pega velocidade
+        float velocidade = isDiferente ? velocidadeLocal : (manager != null ? manager.GetVelocidade(chaveVelocidade) : velocidadeLocal);
+
         // avança no caminho
         float length = spline.CalculateLength(indiceSpline);
-        progress += (speed / length) * Time.deltaTime;
+        progress += (velocidade / length) * Time.deltaTime;
 
         // chegou no fim
         if (progress >= 1f)
@@ -60,13 +83,11 @@ public class IF_SplineWalker : MonoBehaviour
         var splineNodeAtual = SplineNodeAtual;
         if (splineNodeAtual == null) return;
 
-        // pega a próxima spline
         SplineContainer nova = splineNodeAtual.GetProximaSpline();
         if (nova != null)
         {
-            // atualiza a spline no SplineAnimate
             splineAnimate.Container = nova;
-            splineAnimate.Restart(true); // reinicia animação
+            splineAnimate.Restart(true);
             progress = 0f;
         }
     }
