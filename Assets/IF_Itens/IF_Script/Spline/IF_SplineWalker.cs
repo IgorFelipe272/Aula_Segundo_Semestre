@@ -4,14 +4,7 @@ using UnityEngine.Splines;
 public class IF_SplineWalker : MonoBehaviour
 {
     [Header("Configuração de movimento")]
-    public bool isDiferente = false;
-    public float velocidadeLocal = 5f;
-
-    [Header("Configuração do Manager")]
-    public string chaveVelocidade; // string escolhida no Inspector
-
-    private IF_VelocidadeManager manager;
-    private float progress = 0f;
+    //public float velocidadeLocal = 5f;
 
     [Header("Spline Animate")]
     private SplineAnimate splineAnimate;
@@ -28,25 +21,11 @@ public class IF_SplineWalker : MonoBehaviour
     }
 
     private int indiceSpline = 0;
+    private float progress = 0f;
 
     private void Start()
     {
         splineAnimate = GetComponent<SplineAnimate>();
-
-        // procura o objeto com a tag "Velocidade Manager"
-        GameObject go = GameObject.FindGameObjectWithTag("Velocidade Manager");
-        if (go != null)
-        {
-            manager = go.GetComponent<IF_SetVelocidade>()?.manager;
-            if (manager == null)
-            {
-                Debug.LogWarning("O objeto com tag 'Velocidade Manager' não tem IF_SetVelocidade ou não está com manager configurado.");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Nenhum objeto com a tag 'Velocidade Manager' foi encontrado na cena.");
-        }
     }
 
     void Update()
@@ -56,12 +35,10 @@ public class IF_SplineWalker : MonoBehaviour
 
         var spline = splineNodeAtual.Spline;
 
-        // pega velocidade
-        float velocidade = isDiferente ? velocidadeLocal : (manager != null ? manager.GetVelocidade(chaveVelocidade) : velocidadeLocal);
-
-        // avança no caminho
+        // avança no caminho usando somente velocidadeLocal
         float length = spline.CalculateLength(indiceSpline);
-        progress += (velocidade / length) * Time.deltaTime;
+
+        progress += (splineAnimate.MaxSpeed / length) * Time.deltaTime;
 
         // chegou no fim
         if (progress >= 1f)

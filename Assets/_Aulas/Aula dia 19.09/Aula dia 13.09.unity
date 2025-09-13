@@ -1503,15 +1503,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15591c467282541bab3ddde7d3ac720d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.314963
+      value: 2.9310074
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15591c467282541bab3ddde7d3ac720d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4369721
+      value: 3.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15591c467282541bab3ddde7d3ac720d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.8950732
+      value: -2.819245
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15591c467282541bab3ddde7d3ac720d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1709,7 +1709,7 @@ MonoBehaviour:
   m_Duration: 10
   m_MaxSpeed: 4.7949233
   m_EasingMode: 0
-  m_AlignmentMode: 3
+  m_AlignmentMode: 0
   m_ObjectForwardAxis: 2
   m_ObjectUpAxis: 1
   m_StartOffset: 0
@@ -4308,7 +4308,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8077860580599262718, guid: 57a28346769724b3b8c20a10ef0edc67, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2
+      value: 2.1999989
       objectReference: {fileID: 0}
     - target: {fileID: 8077860580599262718, guid: 57a28346769724b3b8c20a10ef0edc67, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4316,7 +4316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077860580599262718, guid: 57a28346769724b3b8c20a10ef0edc67, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.6
+      value: 3.5999985
       objectReference: {fileID: 0}
     - target: {fileID: 8077860580599262718, guid: 57a28346769724b3b8c20a10ef0edc67, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4383,7 +4383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41142f325b26f254b8c92b745d894c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
 --- !u!114 &1941656128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4398,10 +4397,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Target: {fileID: 1038587214}
   m_PlayOnAwake: 1
-  m_LoopMode: 1
+  m_LoopMode: 0
   m_Method: 1
-  m_Duration: 1.2229607
-  m_MaxSpeed: 5
+  m_Duration: 0.24459215
+  m_MaxSpeed: 25
   m_EasingMode: 0
   m_AlignmentMode: 1
   m_ObjectForwardAxis: 2
@@ -4500,7 +4499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1975159889
 Transform:
   m_ObjectHideFlags: 0
