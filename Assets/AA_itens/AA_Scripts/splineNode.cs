@@ -2,18 +2,18 @@ using UnityEngine;
 using UnityEngine.Splines;
 using System.Collections.Generic;
 
-public class IF_SplineNode : MonoBehaviour
+public class splineNode : MonoBehaviour
 {
     [Header("Spline dessa rua")]
-    private SplineContainer spline;
+    public SplineContainer spline;
 
     public SplineContainer Spline => spline;
 
 
     [Header("Proximas ruas possiveis")]
-    public List<IF_SplineNode> proximas; // conexoes possiveis
+    public List<splineNode> proximas; // conex�es possoveis
 
-    private void Start()
+    public void Start()
     {
         spline = GetComponent<SplineContainer>();
     }
