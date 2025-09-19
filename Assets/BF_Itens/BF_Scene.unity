@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 245507950}
   - component: {fileID: 245507949}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: '@Chao'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,7 +611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4491976748569638640, guid: caca259340eb940edb2da589d6f04a90, type: 3}
       propertyPath: m_Name
-      value: curved-highway-piece (2)
+      value: '@curved-highway-piece (2)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -668,7 +668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4491976748569638640, guid: caca259340eb940edb2da589d6f04a90, type: 3}
       propertyPath: m_Name
-      value: curved-highway-piece (1)
+      value: '@curved-highway-piece (1)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -725,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158575124850825215, guid: e9fdb27010175478b8491c22e63b4cb3, type: 3}
       propertyPath: m_Name
-      value: linear-highway-piece (1)
+      value: '@linear-highway-piece (1)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 816278872}
   - component: {fileID: 816278871}
   m_Layer: 0
-  m_Name: SplineRua (1)
+  m_Name: $SplineRua (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1013,7 +1013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8886028446758582084, guid: 57a28346769724b3b8c20a10ef0edc67, type: 3}
       propertyPath: m_Name
-      value: civil-car-C
+      value: //civil-car-C
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1106,7 +1106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4491976748569638640, guid: caca259340eb940edb2da589d6f04a90, type: 3}
       propertyPath: m_Name
-      value: curved-highway-piece
+      value: '@curved-highway-piece'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1163,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6252356961377389083, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
       propertyPath: m_Name
-      value: TT_demo_female
+      value: //TT_demo_female
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1223,7 +1223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8771485836280158511, guid: 9640ae7152ed24295a8d87b0c751cd18, type: 3}
       propertyPath: m_Name
-      value: pedestrian-way-linear-piece
+      value: '@pedestrian-way-linear-piece'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1240,7 +1240,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3921746822376692310, guid: 1a1950ddfca1e4758a6a878bc01d7774, type: 3}
       propertyPath: m_Name
-      value: helicopter
+      value: //helicopter
       objectReference: {fileID: 0}
     - target: {fileID: 4406498837032059116, guid: 1a1950ddfca1e4758a6a878bc01d7774, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1341,7 +1341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7478225697116208144, guid: 6fb37f825ee63264b9c2600bf1a52006, type: 3}
       propertyPath: m_Name
-      value: TT_demo_male_A
+      value: //TT_demo_male_A
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1404,7 +1404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 954405808886676313, guid: a08499fa22dd349eda67b2c4e0e1056d, type: 3}
       propertyPath: m_Name
-      value: infrastructure-building-park
+      value: '@infrastructure-building-park'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 1467488013}
   - component: {fileID: 1467488012}
   m_Layer: 0
-  m_Name: NavMesh Player
+  m_Name: '#NavMesh Player'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1486,7 +1486,7 @@ GameObject:
   - component: {fileID: 1506298910}
   - component: {fileID: 1506298909}
   m_Layer: 0
-  m_Name: SplinePessoas
+  m_Name: $SplinePessoas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1639,7 +1639,7 @@ GameObject:
   - component: {fileID: 1550065992}
   - component: {fileID: 1550065991}
   m_Layer: 0
-  m_Name: SplineArvores
+  m_Name: $SplineArvores
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 1666955217}
   - component: {fileID: 1666955216}
   m_Layer: 0
-  m_Name: SplinePoste
+  m_Name: $SplinePoste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2456,7 +2456,7 @@ GameObject:
   - component: {fileID: 1787100094}
   - component: {fileID: 1787100093}
   m_Layer: 0
-  m_Name: SplineCarro
+  m_Name: $SplineCarro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2848,7 +2848,7 @@ GameObject:
   - component: {fileID: 1796753719}
   - component: {fileID: 1796753718}
   m_Layer: 0
-  m_Name: SplineHelicoptero
+  m_Name: $SplineHelicoptero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2959,7 +2959,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8619338778009079851, guid: 47a3741b253f088469eedd6d403dd89a, type: 3}
       propertyPath: m_Name
-      value: TT_demo_police
+      value: //TT_demo_police
       objectReference: {fileID: 0}
     - target: {fileID: 8619338778009177163, guid: 47a3741b253f088469eedd6d403dd89a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3062,7 +3062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8771485836280158511, guid: 9640ae7152ed24295a8d87b0c751cd18, type: 3}
       propertyPath: m_Name
-      value: pedestrian-way-linear-piece (1)
+      value: '@pedestrian-way-linear-piece (1)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3079,7 +3079,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7447163605589988728, guid: 907fd825e3988774caab4234b943bf44, type: 3}
       propertyPath: m_Name
-      value: TT_demo_male_B
+      value: //TT_demo_male_B
       objectReference: {fileID: 0}
     - target: {fileID: 7447163605590411544, guid: 907fd825e3988774caab4234b943bf44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3207,7 +3207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158575124850825215, guid: e9fdb27010175478b8491c22e63b4cb3, type: 3}
       propertyPath: m_Name
-      value: linear-highway-piece
+      value: '@linear-highway-piece'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3226,7 +3226,7 @@ GameObject:
   - component: {fileID: 2100509159}
   - component: {fileID: 2100509158}
   m_Layer: 0
-  m_Name: SplineRua
+  m_Name: $SplineRua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3389,7 +3389,7 @@ GameObject:
   - component: {fileID: 2115165011}
   - component: {fileID: 2115165010}
   m_Layer: 0
-  m_Name: SplineRua (2)
+  m_Name: $SplineRua (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3598,7 +3598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4491976748569638640, guid: caca259340eb940edb2da589d6f04a90, type: 3}
       propertyPath: m_Name
-      value: curved-highway-piece (3)
+      value: '@curved-highway-piece (3)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
