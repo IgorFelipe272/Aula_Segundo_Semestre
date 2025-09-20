@@ -13,11 +13,6 @@ MonoBehaviour:
   m_Name: IF_Color Palette
   m_EditorClassIdentifier: 
   colorDesigns:
-  - keyChar: /\
-    textColor: {r: 1, g: 1, b: 1, a: 1}
-    backgroundColor: {r: 0.12916468, g: 0.5660378, b: 0.10946956, a: 1}
-    textAlignment: 5
-    fontStyle: 1
   - keyChar: '#'
     textColor: {r: 1, g: 1, b: 1, a: 1}
     backgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -27,4 +22,14 @@ MonoBehaviour:
     textColor: {r: 1, g: 1, b: 1, a: 1}
     backgroundColor: {r: 1, g: 0.04995039, b: 0, a: 1}
     textAlignment: 4
+    fontStyle: 1
+  - keyChar: /\
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    backgroundColor: {r: 0.08889493, g: 0.4056604, b: 0.074626215, a: 1}
+    textAlignment: 5
+    fontStyle: 1
+  - keyChar: \/
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    backgroundColor: {r: 0.12916468, g: 0.5660378, b: 0.10946956, a: 1}
+    textAlignment: 6
     fontStyle: 1
