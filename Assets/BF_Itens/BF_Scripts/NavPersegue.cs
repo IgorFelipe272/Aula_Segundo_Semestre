@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavPolicial : MonoBehaviour
+public class NavPersegue : MonoBehaviour
 {
-    public Transform carro;
+    public Transform perseguido;
     private NavMeshAgent agent;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,6 +13,6 @@ public class NavPolicial : MonoBehaviour
 
     void FixedUpdate()
     {
-        agent.destination = carro.position;
+        agent.destination = perseguido.position;
     }
 }
