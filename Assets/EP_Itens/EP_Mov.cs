@@ -4,28 +4,23 @@ using UnityEngine.Rendering;
 
 public class EP_Mov : MonoBehaviour
 {
-    public float speed = 100f;        
-    public float gravity = -9.81f;  
-    public float jumpHeight = 2f;   
-
-    private Vector3 velocity;
-    private Rigidbody rb;
-
-    private void Start()
+    private NavMeshAgent agent;
+    private RaycastHit hitInfo = new RaycastHit();
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
+    // Update is called once per frame
     void Update()
     {
-   
-        // Pega entrada de movimento (WASD ou setas)
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
-
-        Vector3 move = transform.right * x + transform.forward * z;
-        rb.linearVelocity = (move * speed * Time.deltaTime);
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray.origin, ray.direction, out hitInfo))
+                agent.destination = hitInfo.point;
+        }
     }
 
 }
