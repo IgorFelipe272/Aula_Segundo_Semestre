@@ -27,7 +27,7 @@ public class Miranda_movimentacaoTeste : MonoBehaviour
 
         float distanceToWayPoint = Vector3.Distance(wayPoint[currentWayPointIndex].position, transform.position);
 
-        if(distanceToWayPoint <= 3)
+        if(distanceToWayPoint <= 1.5)
         {
             currentWayPointIndex = (currentWayPointIndex + 1) % wayPoint.Count;
         }
