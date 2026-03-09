@@ -6,6 +6,8 @@ public class Aula_EnemyChase : MonoBehaviour
     private NavMeshAgent agent;
     private Transform player;
 
+    public Transform posicao;
+
     void Start()
     {
         // Pega o NavMeshAgent do inimigo
@@ -28,7 +30,17 @@ public class Aula_EnemyChase : MonoBehaviour
         if (player != null)
         {
             // Atualiza o destino do agente para a posição do jogador
-            agent.SetDestination(player.position);
+            NavMeshPath path = new NavMeshPath();
+            if (agent.CalculatePath(player.position, path) && path.status == NavMeshPathStatus.PathComplete)
+            {
+                //agent.SetDestination(player.position);
+                agent.SetPath(path);
+            }
+            else
+            {
+                //agent.SetDestination(gameObject.transform.position);
+                agent.SetDestination(posicao.position);
+            }
         }
     }
 }
